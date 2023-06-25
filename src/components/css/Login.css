@@ -1,117 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #FEAF00
-}
-
-.crudOperations {
-    color: #000;
-    font-size: 32px;
-    font-family: Montserrat;
-    font-weight: 700;
-    background: #FFF
-}
-
-.LoginRow {
-    border-radius: 20px;
-    background: #FFF;
-    box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.10);
-    width: 1440px;
-    height: 900px;
-    background: #FFF
-}
-
-.SingIn {
-    color: #000;
-    font-size: 22px;
-    font-family: Montserrat;
-    font-weight: 600;
-    text-transform: uppercase;
-    background: #FFF
-}
-
-.p1 {
-    color: #6C6C6C;
-    font-size: 14px;
-    font-family: Montserrat;
-    background: #FFF
-}
-
-/*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-
-.form__input {
-    position: absolute;
+.register {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    font-size: var(--normal-font-size);
-    border: 1px solid var(--border-color);
-    border-radius: .5rem;
+    background: linear-gradient(71.17deg, #feaf00 19.35%, #f8d442 90.12%);
+}
+
+.register__inner {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register-body {
+    background: #fff;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: auto 0;
+    padding: 42px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-title {
+    border-left: 6px solid #f8d442;
+    padding-left: 13px;
+    margin-bottom: 42px;
+}
+
+.register-title__text {
+    margin: 0;
+    padding: 0;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-form__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.register-form__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6c6c6c;
+}
+
+.register-form__label {
+    width: 100%;
+}
+
+.register-form__label-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6c6c6c;
+}
+
+.register-form__label-input {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    width: 415px;
     outline: none;
-    padding: 1rem;
-    /* background:#FFF: none; */
-    z-index: 1;
-    background: #FFF
+    padding: 15px;
 }
 
-.form__label {
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    padding: 0 .25rem;
-    /* background:#FFFground-color: #fff; */
-    color: var(--input-color);
-    font-size: var(--normal-font-size);
-    transition: .3s;
-    background: #FFF
+.register-form__label-input:focus {
+    border-color: #868484;
 }
 
-.form__button {
-    display: block;
-    margin-left: auto;
-    padding: .75rem 2rem;
+.register-form__btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px 0;
     outline: none;
     border: none;
-    /* background:#FFFground-color: var(--first-color); */
+    background: #feaf00;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
     color: #fff;
-    font-size: var(--normal-font-size);
-    border-radius: .5rem;
+    transition: all 0.3s ease;
+}
+
+.register-form__btn:hover {
     cursor: pointer;
-    transition: .3s;
-    background: #FFF
+    background-color: #fccc0e;
 }
 
-.form__button:hover {
-    box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
-    background: #FFF
+.register-extra {
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
 
-
-.form__input:focus+.form__label {
-    top: -.5rem;
-    left: .8rem;
-    color: var(--first-color);
-    font-size: var(--small-font-size);
-    font-weight: 500;
-    z-index: 10;
-    background: #FFF
-}
-.form__input:not(:placeholder-shown).form__input:not(:focus)+.form__label {
-    top: -.5rem;
-    left: .8rem;
-    font-size: var(--small-font-size);
-    font-weight: 500;
-    z-index: 10;
-    background: #FFF
+.register-extra__text,
+.register-extra__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6c6c6c;
 }
 
-/*Input focus*/
-.form__input:focus {
-    border: 1.5px solid var(--first-color);
-    background: #FFF
-}
+.register-extra__link {
+    text-decoration: none;
+    color: #feaf00;
+}       
