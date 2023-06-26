@@ -1,24 +1,20 @@
-import React from "react";
-import Login from "./pages/Login/Login";
-import { Routes, Route } from "react-router-dom";
-import LANG from "./components/language/language";
+import React from 'react';
+import Login from './pages/Login/Login';
+import { Routes, Route } from 'react-router-dom';
+import LANG from './components/language/language';
 export default function App() {
-  const [language, setLanguage] = useState(
-    localStorage.getItem("language") || "2" || "3"
-  );
-  const [mode, setMode] = useState(localStorage.getItem("theme") || true);
   return (
     <context.Provider value={{ language, mode, LANG }}>
-      <div className="wrapper">
+      <div className='wrapper'>
         <Aside />
-        <main className="main">
+        <main className='main'>
           <Header setLanguage={setLanguage} setMode={setMode} />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={Login} />
-            <Route path="/students" element={<Students />} />
-            <Route path="/payment" element={<Payment />} />
-            <Route path="*" element={<Error />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={Login} />
+            <Route path='/students' element={<Students />} />
+            <Route path='/payment' element={<Payment />} />
+            <Route path='*' element={<Error />} />
           </Routes>
         </main>
       </div>

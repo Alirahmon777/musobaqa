@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { context } from "../context";
-import "./index.scss";
 import { NavLink } from "react-router-dom";
 
 function Error(props) {
