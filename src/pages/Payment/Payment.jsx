@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
-import { context } from "../context";
-import icon from "../../assets/icons/sort-icon.svg";
-import icon2 from "../../assets/icons/eye-icon.svg";
+// import { context } from "../../context/Context";
+import { Context } from "../../context/Context";
+import icon from "../../assets/img/sort-icon.svg";
+import icon2 from "../../assets/img/eye-icon.svg";
 import "../../components/css/Paymnet.css";
 
 function Payment(props) {
-  const { mode, language, LANG } = useContext(context);
+  const { mode, language, LANG } = useContext(Context);
   const theme = mode ? false : true;
   const lang = LANG[language];
 
