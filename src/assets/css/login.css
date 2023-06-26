@@ -1,0 +1,148 @@
+.register {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: linear-gradient(71.17deg, #feaf00 19.35%, #f8d442 90.12%);
+}
+
+.register__inner {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-body {
+  background: #fff;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: auto 0;
+  padding: 42px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-title {
+  border-left: 6px solid #f8d442;
+  padding-left: 13px;
+  margin-bottom: 42px;
+}
+
+.register-title__text {
+  margin: 0;
+  padding: 0;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.register-form__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6c6c6c;
+}
+
+.register-form__label {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.register-form__label-text {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6c6c6c;
+}
+
+.register-form__label-input {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  width: 415px;
+  outline: none;
+  padding: 15px;
+}
+
+.register-form__label-input:focus {
+  border-color: #868484;
+}
+
+.register-form__label-input::-webkit-input-placeholder {
+  color: #cdcdcd;
+  font-size: 14px;
+}
+
+.register-form__label-input::-webkit-inner-spin-button,
+.register-form__label-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
+.register-form__btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px 0;
+  outline: none;
+  border: none;
+  background: #feaf00;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.register-form__btn:hover {
+  cursor: pointer;
+  background-color: #fccc0e;
+}
+
+.register-extra {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.register-extra__text,
+.register-extra__link {
+  margin: 10px 0 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6c6c6c;
+}
+
+.register-extra__link {
+  text-decoration: none;
+  color: #feaf00;
+}
+.register-extra__link:hover {
+  color: #fccc0e;
+  transition: all 0.3s ease;
+}
