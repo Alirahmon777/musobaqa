@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import HeroImage1 from '../../assets/graduation-image.png';
-import HeroImage2 from '../../assets/bookmark-image.png';
-import HeroImage3 from '../../assets/dollar-image.png';
+import HeroImage1 from '../../assets/img/graduation-image.png';
+import HeroImage2 from '../../assets/img/bookmark-image.png';
+import HeroImage3 from '../../assets/img/dollar-image.png';
 import { Context } from '../../context/Context';
 import '../../assets/css/home.css';
 
