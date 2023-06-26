@@ -9,13 +9,12 @@ import Error from './pages/Error/Error';
 import Aside from './components/Sidebar';
 import { AuthContext } from './context/AuthContext';
 import Layout from './Layout/Layout';
-
 export default function App() {
   const { setLanguage, setMode } = useContext(Context);
   const { isLogin } = useContext(AuthContext);
 
   return (
-    <div className='wrapper'>
+    <div className='wrapper flex'>
       <Aside />
       <main className='main'>
         <Header setLanguage={setLanguage} setMode={setMode} />

@@ -2,6 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { Context } from '../context/Context';
 import { setLocalStorage } from '../lib/LocalStorage';
+import '../assets/css/header.css';
 
 function Header({ setMode, setLanguage }) {
   const { mode, LANG, language } = useContext(Context);
@@ -44,10 +45,10 @@ function Header({ setMode, setLanguage }) {
             <div className='header-changes flex gap-3'>
               <div
                 className={
-                  'mode-image cursor-pointer  ' +
+                  'mode-image cursor-pointer' +
                   (theme ? 'text-[#FFEB3B]' : 'text-[#19376D]')
                 }
-                title='Light mode'
+                title={theme ? 'light mode' : 'dark mode'}
                 onClick={(e) => {
                   if (mode) {
                     setMode(false);
