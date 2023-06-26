@@ -1,134 +1,138 @@
 .aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 270px;
-    padding: 18px 25px;
-    background: #f2eae1;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 270px;
+  padding: 18px 25px;
+  background: #f2eae1;
+  height: 100%;
 }
 
 .aside-title {
-    border-left: 4px solid #f8d442;
-    padding-left: 12.5px;
-    margin-bottom: 27px;
+  border-left: 4px solid #f8d442;
+  padding-left: 12.5px;
+  margin-bottom: 27px;
 }
 
 .aside-title__text {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
 }
 
 .aside-admin {
-    margin-bottom: 89px;
+  margin-bottom: 89px;
 }
 
 .aside-admin__image {
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .aside-admin__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 21px;
-    color: #000;
-    text-align: center;
-    margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .aside-admin__subtitle {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #feaf00;
-    text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #feaf00;
+  text-align: center;
 }
 
 .aside-pages {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    row-gap: 12px;
-    width: 193px;
-    margin-bottom: 142px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  row-gap: 12px;
+  width: 193px;
+  margin-bottom: 142px;
 }
 
 .aside-page {
-    display: flex;
-    justify-content: center;
-    border-radius: 4px;
-    overflow: hidden;
-    width: 100%;
-    transition: all 0.3s ease;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.3s ease;
+  padding: 0;
 }
 
 .aside-page__link {
-    display: flex;
-    width: 100%;
-    column-gap: 19px;
-    padding: 13px 0px 11px;
-    padding-left: 40px;
-    align-items: center !important;
+  display: flex;
+  width: 100%;
+  column-gap: 19px;
+  padding: 13px 0px 11px;
+  padding-left: 40px;
+  align-items: center !important;
+  text-decoration: none;
 }
 
 .aside-page .active-page,
 .aside-page .active {
-    background: #feaf00;
+  background: #feaf00;
 }
 
 .aside-page:hover {
-    background: #feaf00;
-    cursor: pointer;
+  background: #feaf00;
+  cursor: pointer;
 }
 
 .aside-page__icon {
-    width: 20px;
-    height: 18px;
+  width: 20px;
+  height: 18px;
 }
 
 .aside-page__text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000;
-    padding: 0;
-    margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  padding: 0;
+  margin: 0;
 }
 
 .aside-logout {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 23px;
-    width: 100%;
-    padding: 12px 0;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 23px;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 .aside-logout:hover {
-    background: #feaf00;
-    cursor: pointer;
+  background: #feaf00;
+  cursor: pointer;
 }
 
 .aside-logout__text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000;
-    margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin: 0;
 }

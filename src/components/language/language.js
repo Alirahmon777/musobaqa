@@ -1,4 +1,4 @@
-export const LANG = {
+const LANG = {
   1: {
     title: 'CRUD OPERATSIYALARI',
     home: 'Bosh sahifa',
@@ -87,7 +87,7 @@ export const LANG = {
   3: {
     title: 'CRUD OPERATIONS',
     home: 'Домой',
-    course: 'Курсыrse',
+    course: 'Курсы',
     students: 'Ученики',
     payment: 'Платежы',
     report: 'Отчёт',
@@ -127,3 +127,5 @@ export const LANG = {
     },
   },
 };
+
+export default LANG;
