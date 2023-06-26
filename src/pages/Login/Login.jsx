@@ -1,24 +1,36 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
+import { AuthContext } from '../../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 import '../../assets/css/login.css';
+import { api } from '../../utils/api';
+import { setLocalStorage } from '../../lib/LocalStorage';
+
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+  const { userName, setUserName, phoneNumber, setPhoneNumber, setIsLogin } =
+    useContext(AuthContext);
 
-  function toMain(e) {
+  const toMain = (e) => {
     e.preventDefault();
+    api()
+      .post('https://reqres.in/api/register', {
+        email: userName,
+        password: phoneNumber,
+      })
+      .then((response) => {
+        toast.success('Successfully signed :D');
+        setLocalStorage('token', response.data.token);
 
-    if (email == '' && password == '') {
-      toast.error('Please fill both email and password fields :(');
-    } else if (email == '') {
-      toast.warning('Please fill email field :(');
-    } else if (password == '') {
-      toast.warning('Please fill password field :(');
-    } else {
-      toast.success('Successfully signed :D');
-      window.location.href = '../../../';
-    }
-  }
+        setIsLogin(true);
+        navigate('/');
+        return response.data;
+      })
+      .catch((error) => {
+        toast.error('Please fill both user name and phone number fields :(');
+        throw error;
+      });
+  };
 
   return (
     <div className='register'>
@@ -27,7 +39,7 @@ function Login() {
           <div className='register-title'>
             <h1 className='register-title__text'>CRUD OPERATIONS</h1>
           </div>
-          <form className='register-form'>
+          <form className='register-form' onSubmit={toMain}>
             <h3 className='register-form__title'>Sign In</h3>
             <p className='register-form__subtitle'>
               Enter your credentials to access your account
@@ -36,7 +48,8 @@ function Login() {
               <p className='register-form__label-text'>Name</p>
               <input
                 type='text'
-                onChange={(e) => setEmail(e.target.value)}
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
                 placeholder='Enter your name'
                 name='name'
                 className='register-form__label-input'
@@ -46,25 +59,20 @@ function Login() {
             <label className='register-form__label'>
               <p className='register-form__label-text'>Phone number</p>
               <input
-                type='number'
-                onChange={(e) => setPassword(e.target.value)}
+                type='password'
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
                 placeholder='Enter your phone number'
                 className='register-form__label-input'
               />
             </label>
 
-            <button
-              className='register-form__btn'
-              type='submit'
-              onClick={(e) => toMain(e)}
-            >
-              SIGN IN
-            </button>
+            <button className='register-form__btn'>SIGN IN</button>
           </form>
           <div className='register-extra'>
-            <p className='register-extra__text'>Forgot your password?</p>
+            <p className='register-extra__text'>Forgot your phone number?</p>
             <a href='#' className='register-extra__link'>
-              Reset Password
+              Reset phone number
             </a>
           </div>
         </div>

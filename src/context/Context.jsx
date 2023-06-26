@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import { LANG } from '../components/language/language';
+import LANG from '../components/language/language';
 export const Context = createContext();
 
 const ContextProvider = ({ children }) => {
