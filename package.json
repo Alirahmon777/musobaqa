@@ -12,6 +12,9 @@
     "start:dev": "nodemon ./src/api/server.js"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.6",
     "axios": "^1.4.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",

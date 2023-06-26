@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Context } from './context/Context';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
-// import Payment from './pages/Payment/Payment';
+import Payment from './pages/Payment/Payment';
 import Error from './pages/Error/Error';
 import Aside from './components/Sidebar';
 import { AuthContext } from './context/AuthContext';
@@ -25,13 +25,13 @@ export default function App() {
             {isLogin ? (
               <>
                 <Route path='/' element={<Home />} />
-                {/* <Route path='/students' element={<Students />} /> */}
-                {/* <Route path='/payment' element={<Payment />} /> */}
+                <Route path='/students' element={<Students />} />
+                <Route path='/payment' element={<Payment />} />
                 <Route path='*' element={<Error />} />
               </>
             ) : (
               <>
-                <Route path='*' element={<Login />} />
+                {/* <Route path='*' element={<Login />} / > */}
                 <Route path='/login' element={<Login />} />
               </>
             )}
