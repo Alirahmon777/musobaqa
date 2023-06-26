@@ -1,9 +1,5 @@
-import React from 'react'
-import "../../assets/css/Profile.css"
+import React from 'react';
+import '../../assets/css/Profile.css';
 export default function Profile() {
-  return (
-    <div>
-
-    </div>
-  )
+  return <div>yaxhsi</div>;
 }

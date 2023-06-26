@@ -1,33 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-import Login from './pages/Login/Login';
-import { Routes, Route } from 'react-router-dom';
-import LANG from './components/language/language';
-import {Home} from "../src/pages/Home/Home";
-import Payment from './pages/Payment/Payment';
-export default function App() {
-
-
-  return(
-       <context.Provider value={{ language, mode, LANG }}>
-         <div className="wrapper">
-           <Aside />
-           <main className="main">
-             <Header setLanguage={setLanguage} setMode={setMode} />
-             <Routes>
-               <Route path="/" element={<Home />} />
-               <Route path="/login" element={<Login />} />
-               <Route path="/students" element={<Students />} />
-               <Route path="/payment" element={<Payment />} />
-               <Route path="*" element={<Error />} />
-             </Routes>
-           </main>
-         </div>
-       </context.Provider>
-  
-  )
- 
-=======
 import React, { useContext } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Context } from './context/Context';
@@ -38,6 +8,8 @@ import Error from './pages/Error/Error';
 import Aside from './components/Sidebar';
 import { AuthContext } from './context/AuthContext';
 import Login from './pages/Login/Login';
+import Profile from './pages/Profile/Profile';
+import Groups from './pages/Groups/Groups';
 
 export default function App() {
   const { mode } = useContext(Context);
@@ -57,6 +29,8 @@ export default function App() {
                 <Route path='/' element={<Home />} />
                 {/* <Route path='/students' element={<Students />} /> */}
                 <Route path='/payment' element={<Payment />} />
+                <Route path='/profile' element={<Profile />} />
+                <Route path='/course' element={<Groups />} />
                 <Route path='*' element={<Error />} />
               </>
             ) : (
@@ -70,6 +44,4 @@ export default function App() {
       </div>
     </div>
   );
->>>>>>> bd7325671b9da46a6b3cf287a8721e2d6830d00c
 }
-

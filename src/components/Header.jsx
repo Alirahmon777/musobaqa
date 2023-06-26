@@ -3,10 +3,11 @@ import { useContext } from 'react';
 import { Context } from '../context/Context';
 import { getLocalStorage, setLocalStorage } from '../lib/LocalStorage';
 import '../assets/css/header.css';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
   const { mode, LANG, language, setMode, setLanguage } = useContext(Context);
-
+  const navigate = useNavigate();
   const theme = mode;
 
   const lang = LANG[language];
@@ -15,7 +16,7 @@ function Header() {
     <header className={'header'}>
       <div className='container'>
         <div className='header__inner'>
-          <div href='#' className='header-last'>
+          <div className='header-last' onClick={() => navigate(-1)}>
             <svg
               width='18'
               height='18'

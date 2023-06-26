@@ -25,6 +25,7 @@ const LANG = {
       amountPaid: "To'langan miqdor",
       balanceAmount: 'Summa miqdori',
       date: 'Sana',
+      info: "Ma'lumot",
     },
     header: {
       select: 'Tilni tanlang',
@@ -68,6 +69,7 @@ const LANG = {
       amountPaid: 'Amount Paid',
       balanceAmount: 'Balance Amount',
       date: 'Date',
+      info: 'Info',
     },
     header: {
       select: 'Select language',
@@ -110,6 +112,7 @@ const LANG = {
       amountPaid: 'Выплаченная сумма',
       balanceAmount: 'Сумма остатка',
       date: 'Дата',
+      info: 'Информация',
     },
     header: {
       select: 'Выберите язык',
