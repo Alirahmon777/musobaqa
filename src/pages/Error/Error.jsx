@@ -1,25 +1,39 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Context } from '../../context/Context';
-
+import errorImg from '../../assets/img/404.svg';
 function Error(props) {
-  const { LANG, language } = useContext(Context);
+  const { mode, LANG, language } = useContext(Context);
 
   const lang = LANG[language];
 
   return (
     <>
-      <div className='error bg-purple'>
+      <div
+        className={`error bg-purple border-t pt-2 ${
+          mode ? 'border-t-transparent' : 'border-t-gray-500'
+        }`}
+      >
         <div className='container'>
           <div className='stars bg-purple'>
             <div className='central-body flex flex-col justify-center align-items-center gap-4'>
               <img
                 className='image-404 relative z-20'
-                src='http://salehriaz.com/404Page/img/404.svg'
+                src={errorImg}
                 width='300px'
               ></img>
-              <NavLink to='/' className='btn-go-home' target='_blank'>
-                GO BACK HOME
+              <h3
+                className={`text-2xl tracking-[0.3rem] uppercase text-center w-[360px] ${
+                  mode ? '' : 'text-white'
+                }`}
+              >
+                {lang.errorPage.title}
+              </h3>
+              <NavLink
+                to='/'
+                className={`btn-go-home ${mode ? '' : 'text-white'}`}
+              >
+                {lang.errorPage.button}
               </NavLink>
             </div>
             <div className='objects'>

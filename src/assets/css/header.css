@@ -1,5 +1,5 @@
 .header {
-  width: 1100px;
+  width: 100%;
 }
 .header__inner {
   display: flex;
@@ -13,16 +13,16 @@
   transition: all 0.3s ease;
 }
 .header-last:hover {
-  color: #000000c7;
+  color: #000 c7;
   cursor: pointer;
 }
 .header-extra {
   display: flex;
-  column-gap: 27px;
+  gap: 27px;
   align-items: center;
 }
 .header-extra__search {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   padding: 9px 13px;

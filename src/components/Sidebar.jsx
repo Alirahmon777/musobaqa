@@ -14,7 +14,6 @@ import '../assets/css/Aside.css';
 
 function Aside(props) {
   const { mode, LANG, language } = useContext(Context);
-  const theme = mode ? false : true;
 
   const lang = LANG[language];
 
@@ -45,22 +44,31 @@ function Aside(props) {
 
   function toRegister() {
     removeLocalStorage('token');
-    window.replace('/login');
+    window.location.replace('/login');
   }
 
   return (
     <>
-      <div className={'aside ' + (theme ? '' : ' bg-[#040111]')}>
-        <div className='aside-title'>
-          <h1 className='aside-title__text'>{lang.title}</h1>
-        </div>
+      <aside
+        className={
+          'aside border-r ' +
+          (mode
+            ? 'border-r-transparent'
+            : ' linear-bg__dark-sidebar border-r-gray-500')
+        }
+      >
+        <h1 className={`aside-title__text ${mode ? '' : 'text-white'}`}>
+          {lang.title}
+        </h1>
         <div className='aside-admin'>
           <img
             src={userImage}
             alt='user-image'
             className='aside-admin__image'
           />
-          <h3 className='aside-admin__title'>Karthi Madesh</h3>
+          <h3 className={`aside-admin__title ${mode ? '' : 'text-white'}`}>
+            Karthi Madesh
+          </h3>
           <p className='aside-admin__subtitle'>Admin</p>
         </div>
         <ul className='aside-pages'>
@@ -73,18 +81,21 @@ function Aside(props) {
                     alt='home icon'
                     className='aside-page__icon'
                   />
-                  <p className='aside-page__text'>{asideTexts[index]}</p>
+                  <p className={`aside-page__text ${mode ? '' : 'text-white'}`}>
+                    {asideTexts[index]}
+                  </p>
                 </NavLink>
               </li>
             );
           })}
         </ul>
-
         <button className='aside-logout' onClick={toRegister}>
-          <p className='aside-logout__text'>{lang['logout']}</p>
+          <p className={`aside-logout__text  ${mode ? '' : 'text-white'}`}>
+            {lang['logout']}
+          </p>
           <img src={logoutIcon} alt='logout icon' />
         </button>
-      </div>
+      </aside>
     </>
   );
 }

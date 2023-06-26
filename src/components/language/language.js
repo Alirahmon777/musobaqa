@@ -28,7 +28,7 @@ const LANG = {
     },
     header: {
       select: 'Tilni tanlang',
-      search: 'Qidirish',
+      search: 'Qidirish...',
     },
     errorPage: {
       title: "SAYTDA ADASHIB QOLGANGA O'XSHAYSIZ",
@@ -71,7 +71,7 @@ const LANG = {
     },
     header: {
       select: 'Select language',
-      search: 'Search',
+      search: 'Search...',
     },
     errorPage: {
       title: 'LOOKS LIKE YOU ARE LOST IN SPACE',
@@ -113,7 +113,7 @@ const LANG = {
     },
     header: {
       select: 'Выберите язык',
-      search: 'Поиск',
+      search: 'Поиск...',
     },
     errorPage: {
       title: 'ВЫГЛЯДИТ, КАК ВЫ ПОТЕРЯЛИСЬ В КОСМОСЕ',
