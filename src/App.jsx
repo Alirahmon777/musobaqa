@@ -3,7 +3,7 @@ import Login from "./pages/Login/Login";
 import { Routes, Route } from "react-router-dom";
 export default function App() {
   const [language, setLanguage] = useState(
-    localStorage.getItem("language") || "2"
+    localStorage.getItem("language") || "2" || "3"
   );
   const [mode, setMode] = useState(localStorage.getItem("theme") || true);
   return (
