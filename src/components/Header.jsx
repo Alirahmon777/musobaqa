@@ -1,18 +1,18 @@
 import React from 'react';
 import { useContext } from 'react';
 import { Context } from '../context/Context';
-import { setLocalStorage } from '../lib/LocalStorage';
+import { getLocalStorage, setLocalStorage } from '../lib/LocalStorage';
 import '../assets/css/header.css';
 
-function Header({ setMode, setLanguage }) {
-  const { mode, LANG, language } = useContext(Context);
+function Header() {
+  const { mode, LANG, language, setMode, setLanguage } = useContext(Context);
 
-  const theme = mode ? false : true;
+  const theme = mode;
 
   const lang = LANG[language];
 
   return (
-    <header className={'header ' + (theme ? 'bg-white' : 'bg-[#040111]')}>
+    <header className={'header'}>
       <div className='container'>
         <div className='header__inner'>
           <div href='#' className='header-last'>
@@ -50,16 +50,15 @@ function Header({ setMode, setLanguage }) {
                 }
                 title={theme ? 'light mode' : 'dark mode'}
                 onClick={(e) => {
-                  if (mode) {
-                    setMode(false);
-                    localStorage.setItem('theme', false);
-                  } else {
-                    setMode(true);
-                    localStorage.setItem('theme', true);
-                  }
+                  setMode(getLocalStorage('theme') == true ? false : true);
+                  setLocalStorage(
+                    'theme',
+                    getLocalStorage('theme') == true ? false : true
+                  );
                 }}
               >
                 <svg
+                  className='cursor-pointer'
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 48 48'
                   width='48px'

@@ -17,7 +17,9 @@
   flex-direction: column;
   transition: all 0.3s ease;
 }
-.hero-card:nth-child(2),
+.hero-card:nth-child(2) {
+  background: #fef6fb;
+}
 .hero-card:nth-child(3) {
   background: #fefbec;
 }

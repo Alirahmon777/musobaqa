@@ -6,13 +6,12 @@ import { Context } from '../../context/Context';
 import '../../assets/css/home.css';
 
 function Home() {
-  const { mode, LANG, language } = useContext(Context);
-  const theme = mode ? false : true;
+  const { LANG, language } = useContext(Context);
 
   const lang = LANG[language];
 
   return (
-    <div className={'hero ' + (theme ? '' : 'bg-[#040111]')}>
+    <div className='hero'>
       <div className='container'>
         <div className='hero__inner'>
           <ul className='hero-cards'>

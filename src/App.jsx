@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
-import Login from './pages/Login/Login';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Context } from './context/Context';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
@@ -8,35 +7,37 @@ import Home from './pages/Home/Home';
 import Error from './pages/Error/Error';
 import Aside from './components/Sidebar';
 import { AuthContext } from './context/AuthContext';
-import Layout from './Layout/Layout';
+import Login from './pages/Login/Login';
+
 export default function App() {
-  const { setLanguage, setMode } = useContext(Context);
+  const { mode } = useContext(Context);
   const { isLogin } = useContext(AuthContext);
 
   return (
-    <div className='wrapper flex'>
-      <Aside />
-      <main className='main'>
-        <Header setLanguage={setLanguage} setMode={setMode} />
-        <Routes>
-          {isLogin ? (
-            <>
-              <Route path='/' element={<Layout />}>
-                <Route path='' element={<Home />} />
+    <div className='wrapper'>
+      <div className='flex'>
+        <Aside />
+        <main
+          className={'main w-full ' + (mode ? 'bg-white' : 'linear-bg__dark')}
+        >
+          <Header />
+          <Routes>
+            {isLogin ? (
+              <>
+                <Route path='/' element={<Home />} />
                 {/* <Route path='/students' element={<Students />} /> */}
                 {/* <Route path='/payment' element={<Payment />} /> */}
                 <Route path='*' element={<Error />} />
-              </Route>
-            </>
-          ) : (
-            <>
-              <Route path='*' element={<Navigate to={'/login'} replace />} />
-              <Route path='/login' element={<Login />} />
-            </>
-          )}
-        </Routes>
-        <Routes></Routes>
-      </main>
+              </>
+            ) : (
+              <>
+                <Route path='*' element={<Login />} />
+                <Route path='/login' element={<Login />} />
+              </>
+            )}
+          </Routes>
+        </main>
+      </div>
     </div>
   );
 }
