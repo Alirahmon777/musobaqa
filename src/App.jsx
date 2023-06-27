@@ -17,10 +17,12 @@ export default function App() {
 
   return (
     <div className='wrapper'>
-      <div className='flex'>
+      <div className='flex h-screen'>
         <Aside />
         <main
-          className={'main w-full ' + (mode ? 'bg-white' : 'linear-bg__dark')}
+          className={
+            'main w-full h-full ' + (mode ? 'bg-white' : 'linear-bg__dark')
+          }
         >
           <Header />
           <Routes>

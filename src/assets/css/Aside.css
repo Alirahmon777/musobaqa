@@ -1,10 +1,9 @@
 .aside {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 18px 25px;
-  width: 18%;
+  padding: 18px 25px 8px;
   background: #f2eae1;
 }
 
@@ -56,6 +55,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 195px;
   row-gap: 12px;
 }
 
@@ -69,7 +69,7 @@
 
 .aside-page__link {
   width: 100%;
-  padding: 13px 74px 11px 41px;
+  padding: 13px 0 11px 41px;
   display: flex;
   gap: 19px;
   align-items: center !important;

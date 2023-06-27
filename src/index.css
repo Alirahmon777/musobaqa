@@ -12,10 +12,6 @@
   font-family: sans-serif;
 }
 
-body {
-  height: 100vh;
-}
-
 .linear-bg__dark {
   background: #232526; /* fallback for old browsers */
   background: -webkit-linear-gradient(

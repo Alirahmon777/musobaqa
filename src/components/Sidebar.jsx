@@ -71,30 +71,34 @@ function Aside(props) {
           </h3>
           <p className='aside-admin__subtitle'>Admin</p>
         </div>
-        <ul className='aside-pages'>
-          {asideIcons.map((item, index) => {
-            return (
-              <li className='aside-page' key={index}>
-                <NavLink to={asidePaths[index]} className='aside-page__link'>
-                  <img
-                    src={item}
-                    alt='home icon'
-                    className='aside-page__icon'
-                  />
-                  <p className={`aside-page__text ${mode ? '' : 'text-white'}`}>
-                    {asideTexts[index]}
-                  </p>
-                </NavLink>
-              </li>
-            );
-          })}
-        </ul>
-        <button className='aside-logout' onClick={toRegister}>
-          <p className={`aside-logout__text  ${mode ? '' : 'text-white'}`}>
-            {lang['logout']}
-          </p>
-          <img src={logoutIcon} alt='logout icon' />
-        </button>
+        <div className='h-full flex flex-column justify-between'>
+          <ul className='aside-pages'>
+            {asideIcons.map((item, index) => {
+              return (
+                <li className='aside-page' key={index}>
+                  <NavLink to={asidePaths[index]} className='aside-page__link'>
+                    <img
+                      src={item}
+                      alt='home icon'
+                      className='aside-page__icon'
+                    />
+                    <p
+                      className={`aside-page__text ${mode ? '' : 'text-white'}`}
+                    >
+                      {asideTexts[index]}
+                    </p>
+                  </NavLink>
+                </li>
+              );
+            })}
+          </ul>
+          <button className='aside-logout' onClick={toRegister}>
+            <p className={`aside-logout__text  ${mode ? '' : 'text-white'}`}>
+              {lang['logout']}
+            </p>
+            <img src={logoutIcon} alt='logout icon' />
+          </button>
+        </div>
       </aside>
     </>
   );

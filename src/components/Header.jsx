@@ -13,7 +13,7 @@ function Header() {
   const lang = LANG[language];
 
   return (
-    <header className={'header'}>
+    <header className='header'>
       <div className='container'>
         <div className='header__inner'>
           <div className='header-last' onClick={() => navigate(-1)}>
