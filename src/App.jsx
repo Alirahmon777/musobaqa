@@ -29,7 +29,7 @@ export default function App() {
             {isLogin ? (
               <>
                 <Route path='/' element={<Home />} />
-                {/* <Route path='/students' element={<Students />} /> */}
+                <Route path='/students' element={<Students />} />
                 <Route path='/payment' element={<Payment />} />
                 <Route path='/profile' element={<Profile />} />
                 <Route path='/course' element={<Groups />} />
@@ -37,7 +37,7 @@ export default function App() {
               </>
             ) : (
               <>
-                <Route path='*' element={<Login />} />
+                {/* <Route path='*' element={<Login />} / > */}
                 <Route path='/login' element={<Login />} />
               </>
             )}
