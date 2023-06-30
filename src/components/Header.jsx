@@ -92,7 +92,7 @@ function Header() {
                 </option>
                 <option value='1'>Uzb</option>
                 <option value='2'>Eng</option>
-              </select>
+                <option value="3">Rus</option>              </select>
             </div>
             <form>
               <input

@@ -8,6 +8,7 @@ import Error from "./pages/Error/Error";
 import Aside from "./components/Sidebar";
 import { AuthContext } from "./context/AuthContext";
 import Login from "./pages/Login/Login";
+import Profile from "./pages/Profile/Profile";
 
 export default function App() {
   const { mode } = useContext(Context);
@@ -25,8 +26,9 @@ export default function App() {
             {isLogin ? (
               <>
                 <Route path="/" element={<Home />} />
-                <Route path="/students" element={<Students />} />
+                {/* <Route path="/students" element={<Students />} /> */}
                 <Route path="/payment" element={<Payment />} />
+                <Route path="/profile" element={<Profile/>} />
                 <Route path="*" element={<Error />} />
               </>
             ) : (
