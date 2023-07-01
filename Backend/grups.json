@@ -1,0 +1,54 @@
+[
+    {
+      "id": 1,
+      "direction": "Web Programming",
+      "group_name": "N-107",
+      "teacher_name": "Umidjon",
+      "assistant_teacher_name": "Asadbek",
+      "start_lesson_date": "01.02.2023",
+      "start_lesson_time": "4pm",
+      "created_date": "15.10.2023"
+    },
+    {
+      "id": 2,
+      "direction": "Data Science",
+      "group_name": "DS-101",
+      "teacher_name": "John",
+      "assistant_teacher_name": "Doe",
+      "start_lesson_date": "05.03.2023",
+      "start_lesson_time": "7pm",
+      "created_date": "22.11.2022"
+    },
+    {
+      "id": 3,
+      "direction": "Mobile App Development",
+      "group_name": "Android-A1",
+      "teacher_name": "Susan",
+      "assistant_teacher_name": "Emma",
+      "start_lesson_date": "15.01.2023",
+      "start_lesson_time": "2pm",
+      "created_date": "03.10.2022"
+    },
+    {
+      "id": 4,
+      "direction": "Web Design",
+      "group_name": "WD-505",
+      "teacher_name": "Michael",
+      "assistant_teacher_name": "Karen",
+      "start_lesson_date": "20.02.2023",
+      "start_lesson_time": "6pm",
+      "created_date": "18.06.2022"
+    },
+    {
+      "id": 5,
+      "direction": "Artificial Intelligence",
+      "group_name": "AI-202",
+      "teacher_name": "William",
+      "assistant_teacher_name": "Jennifer",
+      "start_lesson_date": "12.01.2023",
+      "start_lesson_time": "10am",
+      "created_date": "28.09.2022"
+    }
+   
+  ]
+

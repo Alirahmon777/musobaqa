@@ -93,8 +93,12 @@ function Header() {
                 </option>
                 <option value='1'>Uzb</option>
                 <option value='2'>Eng</option>
+<<<<<<< HEAD
                 <option value='3'>Ru</option>
               </select>
+=======
+                <option value="3">Rus</option>              </select>
+>>>>>>> b473a0e86862b44f1271affd3fec3ea8759cd624
             </div>
             <form>
               <input
