@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "node ./src/api/server.js",
-    "start:dev": "nodemon ./src/api/server.js"
+    "start": "node ./backend/src/api/server.js",
+    "start:dev": "nodemon ./backend/src/api/server.js"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

@@ -1,16 +1,18 @@
 import React, { useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import userImage from '../assets/img/aside-image.png';
-import homeIcon from '../assets/img/home-icon.svg';
-import courseIcon from '../assets/img/course-icon.svg';
-import studentIcon from '../assets/img/student-icon.svg';
-import paymentIcon from '../assets/img/payment-icon.svg';
-import reportIcon from '../assets/img/report-icon.svg';
-import settingsIcon from '../assets/img/settings-icon.svg';
-import logoutIcon from '../assets/img/logout-icon.svg';
 import { Context } from '../context/Context';
 import { removeLocalStorage } from '../lib/LocalStorage';
 import '../assets/css/Aside.css';
+import {
+  CourseIcon,
+  HomeIcon,
+  LogoutIcon,
+  PaymentIcon,
+  ReportIcon,
+  SettingsIcon,
+  StudentIcon,
+} from './SvgComponent';
 
 function Aside(props) {
   const { mode, LANG, language } = useContext(Context);
@@ -18,12 +20,12 @@ function Aside(props) {
   const lang = LANG[language];
 
   const asideIcons = [
-    homeIcon,
-    courseIcon,
-    studentIcon,
-    paymentIcon,
-    reportIcon,
-    settingsIcon,
+    <HomeIcon mode={mode} />,
+    <CourseIcon mode={mode} />,
+    <StudentIcon mode={mode} />,
+    <PaymentIcon mode={mode} />,
+    <ReportIcon mode={mode} />,
+    <SettingsIcon mode={mode} />,
   ];
   const asideTexts = [
     lang['home'],
@@ -77,11 +79,7 @@ function Aside(props) {
               return (
                 <li className='aside-page' key={index}>
                   <NavLink to={asidePaths[index]} className='aside-page__link'>
-                    <img
-                      src={item}
-                      alt='home icon'
-                      className='aside-page__icon'
-                    />
+                    {item}
                     <p
                       className={`aside-page__text ${mode ? '' : 'text-white'}`}
                     >
@@ -96,7 +94,7 @@ function Aside(props) {
             <p className={`aside-logout__text  ${mode ? '' : 'text-white'}`}>
               {lang['logout']}
             </p>
-            <img src={logoutIcon} alt='logout icon' />
+            <LogoutIcon mode={mode} />
           </button>
         </div>
       </aside>

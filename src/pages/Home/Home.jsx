@@ -4,9 +4,11 @@ import HeroImage2 from '../../assets/img/bookmark-image.png';
 import HeroImage3 from '../../assets/img/dollar-image.png';
 import { Context } from '../../context/Context';
 import '../../assets/css/home.css';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const { LANG, language } = useContext(Context);
+  const navigate = useNavigate();
 
   const lang = LANG[language];
 
@@ -15,7 +17,7 @@ function Home() {
       <div className='container'>
         <div className='hero__inner'>
           <ul className='hero-cards'>
-            <li className='hero-card'>
+            <li className='hero-card' onClick={() => navigate('/students')}>
               <div className='hero-card__body'>
                 <img src={HeroImage1} alt='card image' />
                 <h4 className='hero-card__body-title'>
@@ -25,7 +27,7 @@ function Home() {
               <span className='hero-card__number'>243</span>
             </li>
 
-            <li className='hero-card'>
+            <li className='hero-card' onClick={() => navigate('/course')}>
               <div className='hero-card__body'>
                 <img src={HeroImage2} alt='card image' />
                 <h4 className='hero-card__body-title'>
@@ -35,7 +37,7 @@ function Home() {
               <span className='hero-card__number'>13</span>
             </li>
 
-            <li className='hero-card'>
+            <li className='hero-card' onClick={() => navigate('/payment')}>
               <div className='hero-card__body'>
                 <img src={HeroImage3} alt='card image' />
                 <h4 className='hero-card__body-title'>
@@ -45,7 +47,7 @@ function Home() {
               <span className='hero-card__number'>INR 556,000</span>
             </li>
 
-            <li className='hero-card'>
+            <li className='hero-card' onClick={() => navigate('/users')}>
               <div className='hero-card__body'>
                 <div className='hero-card__image4'>
                   <svg

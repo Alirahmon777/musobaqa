@@ -1,6 +1,6 @@
 const LANG = {
   1: {
-    title: 'CRUD OPERATSIYALARI',
+    title: 'CRUD AMALIYOTLARI',
     home: 'Bosh sahifa',
     course: 'Kurslar',
     students: "O'quvchilar",
@@ -40,6 +40,11 @@ const LANG = {
       course: 'Kurslar',
       payments: "To'lovlar",
       users: 'Foydalanuvchilar',
+    },
+    courses: {
+      smm: 'SMM',
+      webProgramming: 'Web Dasturlash',
+      graphicDesign: 'Grafik Dizayn',
     },
   },
 
@@ -85,9 +90,14 @@ const LANG = {
       payments: 'Payments',
       users: 'Users',
     },
+    courses: {
+      smm: 'SMM',
+      webProgramming: 'Web Programming',
+      graphicDesign: 'graphic design',
+    },
   },
   3: {
-    title: 'CRUD OPERATIONS',
+    title: 'CRUD ОПЕРАЦИИ',
     home: 'Домой',
     course: 'Курсы',
     students: 'Ученики',
@@ -127,6 +137,11 @@ const LANG = {
       course: 'Курсы',
       payments: 'Платежи',
       users: 'Пользователи',
+    },
+    courses: {
+      smm: 'СММ',
+      webProgramming: 'Веб Программирование',
+      graphicDesign: 'Графический Дизайн',
     },
   },
 };

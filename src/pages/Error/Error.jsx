@@ -23,7 +23,7 @@ function Error(props) {
                 width='300px'
               ></img>
               <h3
-                className={`text-2xl tracking-[0.3rem] uppercase text-center w-[360px] ${
+                className={`text-xl tracking-[0.3rem] uppercase text-center w-[380px] ${
                   mode ? '' : 'text-white'
                 }`}
               >
