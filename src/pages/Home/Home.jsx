@@ -4,12 +4,8 @@ import HeroImage2 from '../../assets/img/bookmark-image.png';
 import HeroImage3 from '../../assets/img/dollar-image.png';
 import { Context } from '../../context/Context';
 import '../../assets/css/home.css';
-<<<<<<< HEAD
-import { useNavigate } from 'react-router-dom';
-=======
-import { Outlet , Link } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import Profile from '../Profile/Profile';
->>>>>>> b473a0e86862b44f1271affd3fec3ea8759cd624
 
 function Home() {
   const { LANG, language } = useContext(Context);
@@ -18,7 +14,6 @@ function Home() {
   const lang = LANG[language];
 
   return (
-<<<<<<< HEAD
     <div className='hero'>
       <div className='container'>
         <div className='hero__inner'>
@@ -29,65 +24,33 @@ function Home() {
                 <h4 className='hero-card__body-title'>
                   {lang.homePage.students}
                 </h4>
-=======
-    <div className="hero">
-      <div className="container">
-        <div className="hero__inner">
-          <ul className="hero-cards">
-            <li className="hero-card">
-              <div className="hero-card__body">
-                  <img src={HeroImage1} alt="card image" />
-                  <h4 className="hero-card__body-title">
-                    {lang.homePage.students}
-                  </h4>
->>>>>>> b473a0e86862b44f1271affd3fec3ea8759cd624
               </div>
               <span className="hero-card__number">243</span>
             </li>
 
-<<<<<<< HEAD
             <li className='hero-card' onClick={() => navigate('/course')}>
               <div className='hero-card__body'>
                 <img src={HeroImage2} alt='card image' />
                 <h4 className='hero-card__body-title'>
-=======
-            <li className="hero-card">
-              <div className="hero-card__body">
-                <img src={HeroImage2} alt="card image" />
-                <h4 className="hero-card__body-title">
->>>>>>> b473a0e86862b44f1271affd3fec3ea8759cd624
                   {lang.homePage.course}
                 </h4>
               </div>
               <span className="hero-card__number">13</span>
             </li>
 
-<<<<<<< HEAD
             <li className='hero-card' onClick={() => navigate('/payment')}>
               <div className='hero-card__body'>
                 <img src={HeroImage3} alt='card image' />
                 <h4 className='hero-card__body-title'>
-=======
-            <li className="hero-card">
-              <div className="hero-card__body">
-                <img src={HeroImage3} alt="card image" />
-                <h4 className="hero-card__body-title">
->>>>>>> b473a0e86862b44f1271affd3fec3ea8759cd624
                   {lang.homePage.payments}
                 </h4>
               </div>
               <span className="hero-card__number">INR 556,000</span>
             </li>
 
-<<<<<<< HEAD
             <li className='hero-card' onClick={() => navigate('/users')}>
               <div className='hero-card__body'>
                 <div className='hero-card__image4'>
-=======
-            <li className="hero-card">
-              <div className="hero-card__body">
-                <div className="hero-card__image4">
->>>>>>> b473a0e86862b44f1271affd3fec3ea8759cd624
                   <svg
                     width="34"
                     height="34"

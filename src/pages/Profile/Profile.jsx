@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import '../../assets/css/Profile.css';
-export default function Profile() {
-  return <div>yaxhsi</div>;
-}
-=======
 import React from "react";
 import ImageUploader from "./ImageUploader";
 
@@ -18,4 +11,3 @@ const Profile = () => {
 };
 
 export default Profile;
->>>>>>> b473a0e86862b44f1271affd3fec3ea8759cd624
