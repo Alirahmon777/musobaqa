@@ -11,10 +11,12 @@ import Login from './pages/Login/Login';
 import Profile from './pages/Profile/Profile';
 import Groups from './pages/Groups/Groups';
 import Students from './pages/Students/Students';
+import { setLocalStorage } from './lib/LocalStorage';
 
 export default function App() {
   const { mode } = useContext(Context);
   const { isLogin } = useContext(AuthContext);
+  setLocalStorage('token', '1234567890'); 
 
   return (
     <div className='wrapper'>
@@ -22,7 +24,8 @@ export default function App() {
         <Aside />
         <main
           className={
-            'main w-full h-full min-h-screen ' + (mode ? 'bg-white' : 'linear-bg__dark')
+            'main w-full h-full min-h-screen ' +
+            (mode ? 'bg-white' : 'linear-bg__dark')
           }
         >
           <Header />
