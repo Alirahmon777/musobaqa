@@ -16,7 +16,7 @@ import { setLocalStorage } from './lib/LocalStorage';
 export default function App() {
   const { mode } = useContext(Context);
   const { isLogin } = useContext(AuthContext);
-  setLocalStorage('token', '1234567890'); 
+  setLocalStorage('token', 'QpwL5tke4Pnpja7X4');
 
   return (
     <div className='wrapper'>
@@ -41,7 +41,7 @@ export default function App() {
               </>
             ) : (
               <>
-                {/* <Route path='*' element={<Login />} / > */}
+                <Route path='*' element={<Login />} />
                 <Route path='/login' element={<Login />} />
               </>
             )}
