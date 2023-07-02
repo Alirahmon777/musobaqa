@@ -10,6 +10,7 @@ import { AuthContext } from './context/AuthContext';
 import Login from './pages/Login/Login';
 import Profile from './pages/Profile/Profile';
 import Groups from './pages/Groups/Groups';
+import Students from './pages/Students/Students';
 
 export default function App() {
   const { mode } = useContext(Context);
@@ -17,11 +18,11 @@ export default function App() {
 
   return (
     <div className='wrapper'>
-      <div className='flex h-screen'>
+      <div className='flex'>
         <Aside />
         <main
           className={
-            'main w-full h-full ' + (mode ? 'bg-white' : 'linear-bg__dark')
+            'main w-full h-full min-h-screen ' + (mode ? 'bg-white' : 'linear-bg__dark')
           }
         >
           <Header />
@@ -29,7 +30,7 @@ export default function App() {
             {isLogin ? (
               <>
                 <Route path='/' element={<Home />} />
-                {/* <Route path='/students' element={<Students />} /> */}
+                <Route path='/students' element={<Students />} />
                 <Route path='/payment' element={<Payment />} />
                 <Route path='/profile' element={<Profile />} />
                 <Route path='/course' element={<Groups />} />
@@ -38,8 +39,8 @@ export default function App() {
             ) : (
               <>
                 {/* <Route path='*' element={<Login />} / > */}
-                <Route path="/login" element={<Login />} />
-                </>
+                <Route path='/login' element={<Login />} />
+              </>
             )}
           </Routes>
         </main>
