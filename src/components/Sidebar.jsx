@@ -13,10 +13,12 @@ import {
   SettingsIcon,
   StudentIcon,
 } from './SvgComponent';
+import { AuthContext } from '../context/AuthContext';
 
 function Aside(props) {
   const { mode, LANG, language } = useContext(Context);
-
+  const { user } = useContext(AuthContext);
+  console.log(user);
   const lang = LANG[language];
 
   const asideIcons = [
@@ -70,7 +72,7 @@ function Aside(props) {
               className='aside-admin__image'
             />
             <h3 className={`aside-admin__title ${mode ? '' : 'text-white'}`}>
-              Karthi Madesh
+              {user}
             </h3>
             <p className='aside-admin__subtitle'>Admin</p>
           </NavLink>

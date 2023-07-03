@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 
 import { studentsCRUD } from './basicFunctions/students.js';
 import { groupsCRUD } from './basicFunctions/groups.js';
+import { errorCRUD } from './basicFunctions/error.js';
 dotenv.config();
 
 const app = express();
@@ -13,5 +14,6 @@ app.use(cors());
 
 studentsCRUD(app);
 groupsCRUD(app);
+errorCRUD(app);
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));

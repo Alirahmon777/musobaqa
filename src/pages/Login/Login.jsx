@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { AuthContext } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -9,9 +9,9 @@ import OtpInput from 'otp-input-react';
 import { RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth';
 import { auth } from '../../firebase.config';
 import PhoneInput from 'react-phone-input-2';
-
 function Login() {
   const navigate = useNavigate();
+  const [error, setError] = useState({});
   const {
     user,
     setUser,
@@ -26,15 +26,19 @@ function Login() {
   } = useContext(AuthContext);
 
   function onCaptchVerify() {
-    window.recaptchaVerifier = new RecaptchaVerifier(
-      'sign-in-button',
-      {
-        callback: (response) => {
-          console.log('prepared phone auth process');
+    if (!window.recaptchaVerifier) {
+      window.recaptchaVerifier = new RecaptchaVerifier(
+        'recaptcha-container',
+        {
+          size: 'invisible',
+          callback: (response) => {
+            onSignup();
+          },
+          'expired-callback': () => {},
         },
-      },
-      auth
-    );
+        auth
+      );
+    }
   }
 
   function onSignup(e) {
@@ -66,19 +70,33 @@ function Login() {
       .confirm(otp)
       .then(async (res) => {
         console.log(res);
-        setUser(res.user);
+        setIsLogin(res.user);
         setLoading(false);
+        setLocalStorage('token', res._tokenResponse.idToken);
+        setLocalStorage('refreshToken', res._tokenResponse.refreshToken);
+        navigate('/');
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err.code);
         setLoading(false);
+        toast.error(error[`${err.code}`], {
+          position: 'top-right',
+        });
       });
   }
+  useEffect(() => {
+    api()
+      .get('/error')
+      .then((res) => {
+        setError(res.data);
+      });
+  }, []);
 
   return (
     <>
       <ToastContainer autoClose={2000} />
       <div className='register'>
+        <div id='recaptcha-container'></div>
         <div className='register__inner'>
           <div className='register-body'>
             <div className='register-title'>
@@ -99,7 +117,7 @@ function Login() {
                   otpType='number'
                   disabled={false}
                   autoFocus
-                  className='opt-container py-4 bg-black'
+                  className='opt-container py-4'
                 ></OtpInput>
                 <button
                   onClick={onOTPVerify}
@@ -109,7 +127,7 @@ function Login() {
                 </button>
               </>
             ) : (
-              <div className='register-form' >
+              <div className='register-form'>
                 <h3 className='register-form__title'>Sign In</h3>
                 <p className='register-form__subtitle'>
                   Enter your credentials to access your account
@@ -118,10 +136,8 @@ function Login() {
                   <p className='register-form__label-text'>Name</p>
                   <input
                     type='text'
-                    value={user.userName}
-                    onChange={(e) =>
-                      setUser({ ...user, userName: e.target.value })
-                    }
+                    value={user}
+                    onChange={(e) => setUser(e.target.value)}
                     placeholder='Enter your name'
                     name='name'
                     className='register-form__label-input'

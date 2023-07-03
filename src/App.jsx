@@ -16,7 +16,6 @@ import { setLocalStorage } from './lib/LocalStorage';
 export default function App() {
   const { mode } = useContext(Context);
   const { isLogin } = useContext(AuthContext);
-  setLocalStorage('token', 'QpwL5tke4Pnpja7X4');
 
   return (
     <div className='wrapper'>

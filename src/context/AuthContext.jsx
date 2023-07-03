@@ -11,7 +11,7 @@ const AuthContextProvider = ({ children }) => {
   const [ph, setPh] = useState('');
   const [loading, setLoading] = useState(false);
   const [showOTP, setShowOTP] = useState(false);
-  const [user, setUser] = useState({ userName: '', phoneNumber: '' });
+  const [user, setUser] = useState('');
   return (
     <AuthContext.Provider
       value={{
