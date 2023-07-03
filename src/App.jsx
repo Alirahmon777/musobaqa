@@ -11,6 +11,7 @@ import Login from './pages/Login/Login';
 import Profile from './pages/Profile/Profile';
 import Groups from './pages/Groups/Groups';
 import Students from './pages/Students/Students';
+import { setLocalStorage } from './lib/LocalStorage';
 
 export default function App() {
   const { mode } = useContext(Context);
@@ -22,7 +23,8 @@ export default function App() {
         <Aside />
         <main
           className={
-            'main w-full h-full min-h-screen ' + (mode ? 'bg-white' : 'linear-bg__dark')
+            'main w-full h-full min-h-screen ' +
+            (mode ? 'bg-white' : 'linear-bg__dark')
           }
         >
           <Header />
@@ -38,7 +40,7 @@ export default function App() {
               </>
             ) : (
               <>
-                {/* <Route path='*' element={<Login />} / > */}
+                <Route path='*' element={<Login />} />
                 <Route path='/login' element={<Login />} />
               </>
             )}

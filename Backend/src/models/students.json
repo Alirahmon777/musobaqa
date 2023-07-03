@@ -1,68 +1,68 @@
 [
-    {
-        "id": 1,
-        "ism": "John",
-        "familya": "Doe",
-        "yosh": "21",
-        "tel_raqam": "+998935974568",
-        "t_username": "@johndoe",
-        "rasm": "https://randomuser.me/api/portraits/men/1.jpg",
-        "jinsi": "erkak",
-        "guruh": "N-107"
-    },
-    {
-        "id": 2,
-        "ism": "Alice",
-        "familya": "Smith",
-        "yosh": "20",
-        "tel_raqam": "+998936542178",
-        "t_username": "@alicesmith",
-        "rasm": "https://randomuser.me/api/portraits/women/2.jpg",
-        "jinsi": "ayol",
-        "guruh": "DS-101"
-    },
-    {
-        "id": 3,
-        "ism": "Bobjon",
-        "familya": "Jackson",
-        "yosh": "24",
-        "tel_raqam": "+998938765432",
-        "t_username": "@bobjohnson",
-        "rasm": "https://randomuser.me/api/portraits/men/3.jpg",
-        "jinsi": "erkak",
-        "guruh": "MD-202"
-    },
-    {
-        "id": 4,
-        "ism": "Emily",
-        "familya": "Williams",
-        "yosh": 23,
-        "tel_raqam": "+998935432178",
-        "t_username": "@emilywilliams",
-        "rasm": "https://randomuser.me/api/portraits/women/4.jpg",
-        "jinsi": "ayol",
-        "guruh": "WD-505"
-    },
-    {
-        "id": 5,
-        "ism": "David",
-        "familya": "Brown",
-        "yosh": 19,
-        "tel_raqam": "+998936780321",
-        "t_username": "@davidbrown",
-        "rasm": "https://randomuser.me/api/portraits/men/5.jpg",
-        "jinsi": "erkak",
-        "guruh": "AI-202"
-    },
-    {
-        "ism": "Neymar",
-        "familya": "Boburov",
-        "tel_raqam": "+998974778011",
-        "t_username": "@neymarbob",
-        "guruh": "Android-A1",
-        "yosh": 27,
-        "rasm": "https://randomuser.me/api/portraits/men/6.jpg",
-        "jinsi": "Erkak",
-        "id": 6
-    }
+  {
+    "id": 1,
+    "ism": "Johnbek",
+    "familya": "Doe",
+    "yosh": "21",
+    "tel_raqam": "+998935974568",
+    "t_username": "@johndoe",
+    "rasm": "https://randomuser.me/api/portraits/men/1.jpg",
+    "jinsi": "erkak",
+    "guruh": "N-107"
+  },
+  {
+    "id": 2,
+    "ism": "Alice",
+    "familya": "Smith",
+    "yosh": "20",
+    "tel_raqam": "+998936542178",
+    "t_username": "@alicesmith",
+    "rasm": "https://randomuser.me/api/portraits/women/2.jpg",
+    "jinsi": "ayol",
+    "guruh": "DS-101"
+  },
+  {
+    "id": 3,
+    "ism": "Bobjon",
+    "familya": "Jackson",
+    "yosh": "24",
+    "tel_raqam": "+998938765432",
+    "t_username": "@bobjohnson",
+    "rasm": "https://randomuser.me/api/portraits/men/3.jpg",
+    "jinsi": "erkak",
+    "guruh": "MD-202"
+  },
+  {
+    "id": 4,
+    "ism": "Emily",
+    "familya": "Williams",
+    "yosh": 23,
+    "tel_raqam": "+998935432178",
+    "t_username": "@emilywilliams",
+    "rasm": "https://randomuser.me/api/portraits/women/4.jpg",
+    "jinsi": "ayol",
+    "guruh": "WD-505"
+  },
+  {
+    "id": 5,
+    "ism": "David",
+    "familya": "Brown",
+    "yosh": 19,
+    "tel_raqam": "+998936780321",
+    "t_username": "@davidbrown",
+    "rasm": "https://randomuser.me/api/portraits/men/5.jpg",
+    "jinsi": "erkak",
+    "guruh": "AI-202"
+  },
+  {
+    "ism": "Neymar",
+    "familya": "Boburov",
+    "tel_raqam": "+998974778011",
+    "t_username": "@neymarbob",
+    "guruh": "Android-A1",
+    "yosh": 27,
+    "rasm": "https://randomuser.me/api/portraits/men/6.jpg",
+    "jinsi": "Erkak",
+    "id": 6
+  }
 ]

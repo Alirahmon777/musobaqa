@@ -4,18 +4,27 @@ import { getLocalStorage } from '../lib/LocalStorage';
 export const AuthContext = createContext();
 
 const AuthContextProvider = ({ children }) => {
-  const [userName, setUserName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
   const [isLogin, setIsLogin] = useState(
     getLocalStorage('token') ? true : false
   );
+  const [otp, setOtp] = useState('');
+  const [ph, setPh] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [showOTP, setShowOTP] = useState(false);
+  const [user, setUser] = useState('');
   return (
     <AuthContext.Provider
       value={{
-        userName,
-        setUserName,
-        phoneNumber,
-        setPhoneNumber,
+        showOTP,
+        setShowOTP,
+        user,
+        setUser,
+        loading,
+        setLoading,
+        otp,
+        setOtp,
+        ph,
+        setPh,
         isLogin,
         setIsLogin,
       }}
