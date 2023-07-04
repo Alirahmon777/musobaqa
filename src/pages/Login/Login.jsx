@@ -150,7 +150,7 @@ function Login() {
                 </label>
 
                 <label className='register-form__label'>
-                  <PhoneInput country={'uz'} value={ph} onChange={setPh} />
+                  <PhoneInput country={'uz'} value={ph} onChange={setPh}/>
                 </label>
 
                 <button className='register-form__btn' onClick={onSignup}>

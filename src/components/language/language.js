@@ -55,10 +55,11 @@ const LANG = {
       start_lesson_time: 'Vaqt',
       created_date: 'Ochilgan sana'
     },
-    students: {
+    studentsPage2: {
       ism: 'Ism',
       familya: 'Familya',
       yosh: 'Yosh',
+      jinsi:"Jinsi",
       tel_raqam: 'Telefon Raqami',
       t_username: 'Telegram foydalanuvchi nomi',
       guruh: 'Guruh'
@@ -130,10 +131,11 @@ const LANG = {
       start_lesson_time: 'Time',
       created_date: 'Date of opening'
     },
-    students: {
+    studentsPage2: {
       ism: 'Name',
       familya: 'Last Name',
       yosh: 'Age',
+      jinsi:"Gender",
       tel_raqam: 'Phone Number',
       t_username: 'Telegram Username',
       guruh: 'Group'
@@ -205,10 +207,11 @@ const LANG = {
       start_lesson_time: 'Время',
       created_date: 'дата открытия'
     },
-    students: {
+    studentsPage2: {
       ism: 'Имя',
       familya: 'Фамилия',
       yosh: 'Возраст',
+      jinsi:"Пол",
       tel_raqam: 'Тедефон номер',
       t_username: 'Telegram Имя пользователя',
       guruh: 'группа'
