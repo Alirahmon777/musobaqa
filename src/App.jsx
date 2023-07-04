@@ -9,7 +9,7 @@ import Aside from './components/Sidebar';
 import { AuthContext } from './context/AuthContext';
 import Login from './pages/Login/Login';
 import Profile from './pages/Profile/Profile';
-import Groups from './pages/Groups/Groups';
+// import Groups from './pages/Groups/Groups';
 import Students from './pages/Students/Students';
 // import { setLocalStorage } from './lib/LocalStorage';
 
@@ -35,7 +35,7 @@ export default function App() {
                 <Route path='/students' element={<Students />} />
                 <Route path='/payment' element={<Payment />} />
                 <Route path='/profile' element={<Profile />} />
-                <Route path='/course' element={<Groups />} />
+                {/* <Route path='/course' element={<Groups />} /> */}
                 <Route path='*' element={<Error />} />
               </>
             ) : (
