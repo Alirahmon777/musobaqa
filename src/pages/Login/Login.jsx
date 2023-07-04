@@ -59,9 +59,13 @@ function Login() {
         setShowOTP(true);
         toast.success('OTP sended successfully!');
       })
-      .catch((error) => {
+      .catch((err) => {
         console.log(error);
+        console.log(err);
         setLoading(false);
+        toast.error(error[`${err.code}`], {
+          position: 'top-right',
+        });
       });
   }
 
