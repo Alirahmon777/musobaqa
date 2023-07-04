@@ -11,12 +11,12 @@ import Login from './pages/Login/Login';
 import Profile from './pages/Profile/Profile';
 import Groups from './pages/Groups/Groups';
 import Students from './pages/Students/Students';
-import { setLocalStorage } from './lib/LocalStorage';
+// import { setLocalStorage } from './lib/LocalStorage';
 
 export default function App() {
   const { mode } = useContext(Context);
   const { isLogin } = useContext(AuthContext);
-
+// setLocalStorage("token", "RnLrvjYXN4bXAow5sanHD6URpVd2");
   return (
     <div className='wrapper'>
       <div className='flex'>

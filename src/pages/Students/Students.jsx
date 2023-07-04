@@ -35,66 +35,66 @@ export default function Students() {
         setOpen={setOpen}
       />
       <div className={`students`}>
-        <div className='container'>
-          <div className='students-info flex justify-content-between pb-4 items-center border-b border-b-gray-400'>
+        <div className="container">
+          <div className="students-info flex justify-content-between pb-4 items-center border-b border-b-gray-400">
             <h2
-              className={'students-info__title ' + (mode ? '' : 'text-white')}
+              className={"students-info__title " + (mode ? "" : "text-white")}
             >
-              {lang.studentsPage['title']}
+              {lang.studentsPage["title"]}
             </h2>
-            <div className='students-extra flex gap-[30px]'>
-              <img src={icon} alt='image' />
+            <div className="students-extra flex gap-[30px]">
+              <img src={icon} alt="image" />
               <button
-                data-modal-target='authentication-modal'
-                data-modal-toggle='authentication-modal'
-                className='text-white text-sm font-medium bg-[#FEAF00] rounded py-[13px] px-[26px]'
+                data-modal-target="authentication-modal"
+                data-modal-toggle="authentication-modal"
+                className="text-white text-sm font-medium bg-[#FEAF00] rounded py-[13px] px-[26px]"
               >
-                {lang.studentsPage['button']}
+                {lang.studentsPage["button"]}
               </button>
             </div>
           </div>
-          <table className='table table-hover border-separate border-spacing-x-0 border-spacing-y-3'>
-            <thead className='border-none'>
-              <tr className={`${darkClassHead(mode, 'transparent')}`}>
+          <table className="table table-hover border-separate border-spacing-x-0 border-spacing-y-3">
+            <thead className="border-none">
+              <tr className={`${darkClassHead(mode, "transparent")}`}>
                 <th
                   className={`whitespace-nowrap py-3 bg-transparent !text-inherit border-none`}
                 ></th>
 
                 <th
-                  scope='col'
+                  scope="col"
                   className={`whitespace-nowrap py-3 capitalize bg-transparent !text-inherit border-none`}
                 >
-                  ism
+                  {lang.studentsPage["ism"]}
                 </th>
                 <th
-                  scope='col'
+                  scope="col"
                   className={`whitespace-nowrap py-3 capitalize bg-transparent !text-inherit border-none`}
                 >
-                  familiya
+                  {lang.studentsPage["familya"]}
                 </th>
                 <th
-                  scope='col'
+                  scope="col"
                   className={`whitespace-nowrap py-3 capitalize bg-transparent !text-inherit border-none`}
                 >
-                  yosh
+                  {lang.studentsPage["yosh"]}
                 </th>
                 <th
-                  scope='col'
+                  scope="col"
                   className={`whitespace-nowrap py-3 capitalize bg-transparent !text-inherit border-none`}
                 >
-                  telefon raqami
+                  {lang.studentsPage["tel_raqam"]}
                 </th>
                 <th
-                  scope='col'
+                  scope="col"
                   className={`whitespace-nowrap py-3 capitalize bg-transparent !text-inherit border-none`}
                 >
-                  foydalanuvchining nomi
+                  {lang.studentsPage['t_username']}
                 </th>
                 <th
-                  scope='col'
+                  scope="col"
                   className={`whitespace-nowrap py-3 capitalize bg-transparent !text-inherit border-none`}
                 >
-                  guruh
+                  {lang.studentsPage['guruh']}
                 </th>
                 <th
                   className={`whitespace-nowrap py-3 bg-transparent !text-inherit border-none`}
@@ -108,7 +108,7 @@ export default function Students() {
               {students.map((student, i) => (
                 <tr
                   key={i}
-                  scope='row'
+                  scope="row"
                   className={`rounded-lg !mt-5 ${darkClass(mode, i)}`}
                 >
                   <td
@@ -116,8 +116,8 @@ export default function Students() {
                   >
                     <img
                       src={student.rasm}
-                      alt=''
-                      className='rounded-lg w-[64px] h-[54px] align-middle object-bottom object-cover'
+                      alt=""
+                      className="rounded-lg w-[64px] h-[54px] align-middle object-bottom object-cover"
                     />
                   </td>
                   <td
@@ -154,22 +154,22 @@ export default function Students() {
                     className={`align-middle whitespace-nowrap py-2 bg-transparent !text-inherit`}
                   >
                     <button
-                      title='edit'
-                      className='align-middle'
+                      title="edit"
+                      className="align-middle"
                       onClick={() => handleOpen(student.id)}
                     >
-                      <img src={editIcon} alt='edit icon' />
+                      <img src={editIcon} alt="edit icon" />
                     </button>
                   </td>
                   <td
                     className={`align-middle whitespace-nowrap py-2 bg-transparent text-inherit rounded-r-lg`}
                   >
                     <button
-                      title='delete'
-                      className='align-middle'
+                      title="delete"
+                      className="align-middle"
                       onClick={() => deleteHandler(student.id, setStudents)}
                     >
-                      <img src={deleteIcon} alt='delete icon' />
+                      <img src={deleteIcon} alt="delete icon" />
                     </button>
                   </td>
                 </tr>

@@ -5,7 +5,7 @@ import HeroImage3 from '../../assets/img/dollar-image.png';
 import { Context } from '../../context/Context';
 import '../../assets/css/home.css';
 import { Outlet, useNavigate } from 'react-router-dom';
-import Profile from '../Profile/Profile';
+// import Profile from '../Profile/Profile';
 
 function Home() {
   const { LANG, language } = useContext(Context);

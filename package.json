@@ -9,7 +9,6 @@
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "node ./Backend/Bot/index.js"
-
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -25,6 +24,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
+    "react-otp-input": "^3.0.2",
     "react-phone-input-2": "^2.15.1",
     "react-toastify": "^9.1.3"
   },
