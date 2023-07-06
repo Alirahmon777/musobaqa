@@ -29,10 +29,10 @@ export const studentsCRUD = (app) => {
   // POST a new student
   app.post('/students', (req, res) => {
     try {
-      const { ism, yosh, familya, jinsi, tel_raqam } = req.body
+      const { ism, yosh, familya, jinsi, tel_raqam, guruh, t_username, rasm } = req.body
       const students = readFile('students.json')
 
-      if (!ism || !yosh || !familya) {
+      if (!ism || !yosh || !familya || !guruh, !t_username || !rasm) {
         res.statusCode = 400
         res.send({ message: 'All fields are required' })
         return
@@ -41,7 +41,7 @@ export const studentsCRUD = (app) => {
 
       students.push({
         id: getNextId(students),
-        ism, yosh, familya, jinsi , tel_raqam
+        ism, yosh, familya, jinsi, tel_raqam, guruh, t_username, rasm
       })
 
       writeFile('students.json', students)
@@ -67,6 +67,8 @@ export const studentsCRUD = (app) => {
       student.yosh = yosh ? yosh : student.yosh;
       student.t_username = t_username ? t_username : student.t_username;
       student.guruh = guruh ? guruh : student.guruh;
+      student.rasm = rasm ? rasm : student.rasm;
+
       writeFile('students.json', students);
       res.statusCode = 200;
       res.send(students);

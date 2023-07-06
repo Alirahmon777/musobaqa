@@ -44,44 +44,35 @@
         "guruh": "AI-202"
     },
     {
-        "id": 11,
+        "id": 6,
         "ism": "Temur",
-        "yosh": "12",
-        "familya": "Bekjon",
-        "jinsi": "male",
-        "rasm": "https://randomuser.me/api/portraits/men/3.jpg",
-        "tel_raqam": "+998 99 543 0660 "
+        "yosh": "100",
+        "familya": "tog'o",
+        "jinsi": "female",
+        "tel_raqam": "+998995430660 ",
+        "guruh": "N-107",
+        "t_username": "@exxmple123"
     },
     {
-        "id": 12,
+        "id": 7,
         "ism": "Temur",
-        "yosh": "12",
-        "familya": "Eshtemirov",
-        "jinsi": "male",
-        "tel_raqam": "+998 99 543 0660 "
+        "yosh": "124",
+        "familya": "Temur",
+        "jinsi": "female",
+        "tel_raqam": "+998 99 543 0660 ",
+        "guruh": "N-107",
+        "t_username": "@exxmple123",
+        "rasm": "C:\\fakepath\\pexels-peter-olexa-3875821.jpg"
     },
     {
-        "id": 13,
+        "id": 8,
         "ism": "Temur",
-        "yosh": "12",
-        "familya": "Eshtemirov",
+        "yosh": "124124",
+        "familya": "Temur",
         "jinsi": "male",
-        "tel_raqam": "+998 99 543 0660 "
-    },
-    {
-        "id": 14,
-        "ism": "Temur",
-        "yosh": "12",
-        "familya": "Bek",
-        "jinsi": "male",
-        "tel_raqam": "+998 99 543 0660 "
-    },
-    {
-        "id": 15,
-        "ism": "Temur",
-        "yosh": "12",
-        "familya": "Eshte",
-        "jinsi": "male",
-        "tel_raqam": "+998 99 543 0660 "
+        "tel_raqam": "+998 99 543 0660 ",
+        "guruh": "N-107",
+        "t_username": "@exxmple123",
+        "rasm": "C:\\fakepath\\Madagaskar_720.mp4"
     }
 ]

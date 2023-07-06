@@ -19,6 +19,7 @@ export default function StudentPost({ setModal, modal, setStudents }) {
   const [phone_number, setPhone_Number] = useState();
   const [image_student, setImage_Student] = useState("");
   const [group_input, setGroup_Input] = useState("");
+
   const [student_username, setStudent_Username] = useState("");
   const { groups, setGroups } = useContext(GroupsContext);
   const lang = LANG[language];
@@ -33,7 +34,7 @@ export default function StudentPost({ setModal, modal, setStudents }) {
         yosh: age,
         jinsi: gender,
         tel_raqam: phone_number,
-        guruh_kiritish: group_input,
+        guruh: group_input,
         t_username: student_username,
         rasm: image_student,
       })
@@ -294,15 +295,17 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                   </select>
                 </div>
 
-                <div className="flex items-center justify-center w-full "style={{
-                  marginLeft:"150px"
-                }} >
+                <div
+                  className="flex items-center justify-center w-full "
+                  style={{
+                    marginLeft: "150px",
+                  }}
+                >
                   <label
                     htmlFor="dropzone-file"
                     style={{
-                      width:"100%",
-                      height:"100px",
-                  
+                      width: "100%",
+                      height: "100px",
                     }}
                     className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
                   >
@@ -330,7 +333,14 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                         SVG, PNG, JPG or GIF (MAX. 800x400px)
                       </p>
                     </div>
-                    <input id="dropzone-file" type="file" className="hidden" value={image_student} name="image_student"onChange={(e)=> setImage_Student(e.target.value)} />
+                    <input
+                      id="dropzone-file"
+                      type="file"
+                      className="hidden"
+                      value={image_student}
+                      name="image_student"
+                      onChange={(e) => setImage_Student(e.target.value)}
+                    />
                   </label>
                 </div>
               </div>
