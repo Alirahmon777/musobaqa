@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import '../../assets/css/login.css';
 import { api } from '../../utils/api';
 import { setLocalStorage } from '../../lib/LocalStorage';
-import OtpInput from 'otp-input-react';
+// import OtpInput from 'otp-input-react';
+import {OtpInput} from "otp-input-react"
 import { RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth';
 import { auth } from '../../firebase.config';
 import PhoneInput from 'react-phone-input-2';
@@ -149,7 +150,7 @@ function Login() {
                 </label>
 
                 <label className='register-form__label'>
-                  <PhoneInput country={'uz'} value={ph} onChange={setPh} />
+                  <PhoneInput country={'uz'} value={ph} onChange={setPh}/>
                 </label>
 
                 <button className='register-form__btn' onClick={onSignup}>

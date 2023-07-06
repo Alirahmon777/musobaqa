@@ -46,6 +46,35 @@ const LANG = {
       webProgramming: 'Web Dasturlash',
       graphicDesign: 'Grafik Dizayn',
     },
+    groups: {
+      direction: `Yo'nalish`,
+      group_name: 'Guruh nomi',
+      teacher_name: `O'qituvchining ismi`,
+      assistant_teacher_name: `Yordamchi O'qtuvchining ismi`,
+      start_lesson_date: 'Kun',
+      start_lesson_time: 'Vaqt',
+      created_date: 'Ochilgan sana'
+    },
+    studentsPage2: {
+      ism: 'Ism',
+      familya: 'Familya',
+      yosh: 'Yosh',
+      jinsi: "Jinsi",
+      tel_raqam: 'Telefon Raqami',
+      t_username: 'Telegram foydalanuvchi nomi',
+      guruh: 'Guruh',
+      student_tusername:"Telegram foydalanuvchi nomi kiriting",
+      guruh_kiritish:"Guruhingizzni kiriting"
+    },
+    assistant_teachers: {
+      name: 'Ism',
+      last_name: 'Familya',
+      age: 'Yosh',
+      direction: `Yo'nalsh`,
+      phone_number: 'Telefon raqami',
+      telegram_username: 'Telegram foydalanuvchi nomi',
+      gender: 'Jinsi'
+    }
   },
 
   2: {
@@ -95,6 +124,35 @@ const LANG = {
       webProgramming: 'Web Programming',
       graphicDesign: 'graphic design',
     },
+    groups: {
+      direction: 'Direction',
+      group_name: 'Group Name',
+      teacher_name: 'Teacher Name',
+      assistant_teacher_name: 'Assistant Teacher Name',
+      start_lesson_date: 'Day',
+      start_lesson_time: 'Time',
+      created_date: 'Date of opening'
+    },
+    studentsPage2: {
+      ism: 'Name',
+      familya: 'Last Name',
+      yosh: 'Age',
+      jinsi: "Gender",
+      tel_raqam: 'Phone Number',
+      t_username: 'Telegram Username',
+      guruh: 'Group',
+      student_tusername:"Enter Your Telegram Username ",
+      guruh_kiritish:"Enter your group"
+    },
+    assistant_teachers: {
+      name: 'Name',
+      last_name: 'Last Name',
+      age: 'Age',
+      direction: 'Direction',
+      phone_number: 'Phone Number',
+      telegram_username: 'Telegram Username',
+      gender: 'Gender'
+    }
   },
   3: {
     title: 'CRUD ОПЕРАЦИИ',
@@ -143,6 +201,36 @@ const LANG = {
       webProgramming: 'Веб Программирование',
       graphicDesign: 'Графический Дизайн',
     },
+
+    groups: {
+      direction: 'Направление',
+      group_name: 'Имя группы',
+      teacher_name: 'Имя Учителя',
+      assistant_teacher_name: 'Имя помощника учителя',
+      start_lesson_date: 'День',
+      start_lesson_time: 'Время',
+      created_date: 'дата открытия'
+    },
+    studentsPage2: {
+      ism: 'Имя',
+      familya: 'Фамилия',
+      yosh: 'Возраст',
+      jinsi: "Пол",
+      tel_raqam: 'Тедефон номер',
+      t_username: 'Telegram Имя пользователя',
+      guruh: 'группа',
+      student_tusername:"Веддите Telegram Имя пользователя",
+      guruh_kiritish:"Выберите свою группу "
+    },
+    assistant_teachers: {
+      name: 'Имя',
+      last_name: 'Фамилия',
+      age: 'Возраст',
+      direction: 'Направление',
+      phone_number: 'Телефон номер',
+      telegram_username: 'Telegram Имя пользователя',
+      gender: 'Пол'
+    }
   },
 };
 
