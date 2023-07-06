@@ -1,13 +1,13 @@
 [
     {
         "id": 2,
-        "ism": "Jumanazar",
-        "familya": "Tog'o",
+        "ism": "Emily",
+        "familya": "Davidov",
         "yosh": "20",
         "tel_raqam": "+998936542178",
         "t_username": "@alicesmith",
         "rasm": "https://randomuser.me/api/portraits/women/2.jpg",
-        "jinsi": "ayol",
+        "jinsi": "female",
         "guruh": "DS-101"
     },
     {
@@ -18,7 +18,7 @@
         "tel_raqam": "+998938765432",
         "t_username": "@bobjohnson",
         "rasm": "https://randomuser.me/api/portraits/men/3.jpg",
-        "jinsi": "erkak",
+        "jinsi": "male",
         "guruh": "MD-202"
     },
     {
@@ -29,7 +29,7 @@
         "tel_raqam": "+998935432178",
         "t_username": "@emilywilliams",
         "rasm": "https://randomuser.me/api/portraits/women/4.jpg",
-        "jinsi": "ayol",
+        "jinsi": "female",
         "guruh": "WD-505"
     },
     {
@@ -40,14 +40,48 @@
         "tel_raqam": "+998936780321",
         "t_username": "@davidbrown",
         "rasm": "https://randomuser.me/api/portraits/men/5.jpg",
-        "jinsi": "erkak",
+        "jinsi": "male",
         "guruh": "AI-202"
     },
     {
-        "id": 6,
+        "id": 11,
         "ism": "Temur",
         "yosh": "12",
-        "familya": "Tog'o",
-        "jinsi": "male"
+        "familya": "Bekjon",
+        "jinsi": "male",
+        "rasm": "https://randomuser.me/api/portraits/men/3.jpg",
+        "tel_raqam": "+998 99 543 0660 "
+    },
+    {
+        "id": 12,
+        "ism": "Temur",
+        "yosh": "12",
+        "familya": "Eshtemirov",
+        "jinsi": "male",
+        "tel_raqam": "+998 99 543 0660 "
+    },
+    {
+        "id": 13,
+        "ism": "Temur",
+        "yosh": "12",
+        "familya": "Eshtemirov",
+        "jinsi": "male",
+        "tel_raqam": "+998 99 543 0660 "
+    },
+    {
+        "id": 14,
+        "ism": "Temur",
+        "yosh": "12",
+        "familya": "Bek",
+        "jinsi": "male",
+        "tel_raqam": "+998 99 543 0660 "
+    },
+    {
+        "id": 15,
+        "ism": "Temur",
+        "yosh": "12",
+        "familya": "Eshte",
+        "jinsi": "male",
+        "tel_raqam": "+998 99 543 0660 "
     }
 ]

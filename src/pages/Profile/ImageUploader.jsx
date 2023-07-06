@@ -16,7 +16,9 @@ const ImageUploader = () => {
     <div>
       <input type="file" onChange={handleFileInputChange} />
       <button onClick={handleUpload}>Upload Image</button>
-      {selectedImage && <img src={selectedImage} alt="Selected" />}
+      {selectedImage && <img src={selectedImage} style={{
+        borderRadius:"60%"
+      }} alt="Selected" />}
     </div>
   );
 };

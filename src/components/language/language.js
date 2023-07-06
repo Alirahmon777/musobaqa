@@ -59,10 +59,12 @@ const LANG = {
       ism: 'Ism',
       familya: 'Familya',
       yosh: 'Yosh',
-      jinsi:"Jinsi",
+      jinsi: "Jinsi",
       tel_raqam: 'Telefon Raqami',
       t_username: 'Telegram foydalanuvchi nomi',
-      guruh: 'Guruh'
+      guruh: 'Guruh',
+      student_tusername:"Telegram foydalanuvchi nomi kiriting",
+      guruh_kiritish:"Guruhingizzni kiriting"
     },
     assistant_teachers: {
       name: 'Ism',
@@ -135,10 +137,12 @@ const LANG = {
       ism: 'Name',
       familya: 'Last Name',
       yosh: 'Age',
-      jinsi:"Gender",
+      jinsi: "Gender",
       tel_raqam: 'Phone Number',
       t_username: 'Telegram Username',
-      guruh: 'Group'
+      guruh: 'Group',
+      student_tusername:"Enter Your Telegram Username ",
+      guruh_kiritish:"Enter your group"
     },
     assistant_teachers: {
       name: 'Name',
@@ -211,10 +215,12 @@ const LANG = {
       ism: 'Имя',
       familya: 'Фамилия',
       yosh: 'Возраст',
-      jinsi:"Пол",
+      jinsi: "Пол",
       tel_raqam: 'Тедефон номер',
       t_username: 'Telegram Имя пользователя',
-      guruh: 'группа'
+      guruh: 'группа',
+      student_tusername:"Веддите Telegram Имя пользователя",
+      guruh_kiritish:"Выберите свою группу "
     },
     assistant_teachers: {
       name: 'Имя',
