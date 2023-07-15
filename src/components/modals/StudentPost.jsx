@@ -51,13 +51,13 @@ export default function StudentPost({ setModal, modal, setStudents }) {
     setAge("");
   };
 
-  useEffect(() => {
-    api()
-      .get(`/course`)
-      .then((res) => {
-        setGroups(res.data);
-      });
-  }, []);
+  // useEffect(() => {
+  //   api()
+  //     .get(`/course`)
+  //     .then((res) => {
+  //       setGroups(res.data);
+  //     });
+  // }, []);
 
   function handleInputChange(event) {
     setImage_Student(event.target.value);
@@ -69,29 +69,25 @@ export default function StudentPost({ setModal, modal, setStudents }) {
         id="updateProductModal"
         tabIndex="-1"
         aria-hidden="true"
-        className={`${
-          modal ? "flex" : "hidden"
-        } overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full`}
+        className={`${modal ? "flex" : "hidden"
+          } overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full`}
       >
         <div className="relative p-4 w-full max-w-2xl h-full md:h-auto">
           <div
-            className={`relative p-4 rounded-lg shadow ${
-              mode ? "bg-white" : "linear-bg__dark-sidebar sm:p-5"
-            }`}
+            className={`relative p-4 rounded-lg shadow ${mode ? "bg-white" : "linear-bg__dark-sidebar sm:p-5"
+              }`}
           >
             <div className="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
               <h3
-                className={`text-lg font-semibold ${
-                  mode ? "text-gray-900" : "dark:text-white"
-                }`}
+                className={`text-lg font-semibold ${mode ? "text-gray-900" : "dark:text-white"
+                  }`}
               >
                 Create User
               </h3>
               <button
                 type="button"
-                className={`text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 ${
-                  mode ? "" : "hover:text-white"
-                }`}
+                className={`text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 ${mode ? "" : "hover:text-white"
+                  }`}
                 data-modal-toggle="updateProductModal"
                 onClick={() => setModal(false)}
               >
@@ -116,9 +112,8 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                 <div>
                   <label
                     htmlFor="name"
-                    className={`block mb-2 text-sm font-medium ${
-                      mode ? "text-gray-900" : "dark:text-white"
-                    }`}
+                    className={`block mb-2 text-sm font-medium ${mode ? "text-gray-900" : "dark:text-white"
+                      }`}
                   >
                     Name
                   </label>
@@ -128,20 +123,18 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                     id="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 ${
-                      mode
+                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 ${mode
                         ? ""
                         : "!bg-[#19376D] caret-white border-gray-600 placeholder-gray-300 text-white focus:ring-primary-500 focus:border-primary-500"
-                    }`}
+                      }`}
                     placeholder="name..."
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="surname"
-                    className={`block mb-2 text-sm font-medium ${
-                      mode ? "text-gray-900" : "dark:text-white"
-                    }`}
+                    className={`block mb-2 text-sm font-medium ${mode ? "text-gray-900" : "dark:text-white"
+                      }`}
                   >
                     Surname
                   </label>
@@ -151,20 +144,18 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                     id="surname"
                     onChange={(e) => setSurname(e.target.value)}
                     value={surname}
-                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 ${
-                      mode
+                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 ${mode
                         ? ""
                         : "!bg-[#19376D] caret-white placeholder-gray-300 text-white focus:ring-primary-500 focus:border-primary-500"
-                    }`}
+                      }`}
                     placeholder="surname..."
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="age"
-                    className={`block mb-2 text-sm font-medium ${
-                      mode ? "text-gray-900" : "dark:text-white"
-                    }`}
+                    className={`block mb-2 text-sm font-medium ${mode ? "text-gray-900" : "dark:text-white"
+                      }`}
                   >
                     Age
                   </label>
@@ -174,20 +165,18 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                     onChange={(e) => setAge(e.target.value)}
                     name="age"
                     id="age"
-                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 ${
-                      mode
+                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 ${mode
                         ? ""
                         : "!bg-[#19376D] caret-white placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
-                    }`}
+                      }`}
                     placeholder="age..."
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="gender"
-                    className={`block mb-2 text-sm font-medium ${
-                      mode ? "text-gray-900" : "dark:text-white"
-                    }`}
+                    className={`block mb-2 text-sm font-medium ${mode ? "text-gray-900" : "dark:text-white"
+                      }`}
                   >
                     Choose Students Gender
                   </label>
@@ -207,9 +196,8 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                 <div>
                   <label
                     htmlFor="phone_number"
-                    className={`block mb-2 text-sm font-medium ${
-                      mode ? "text-gray-900" : "dark:text-white"
-                    }`}
+                    className={`block mb-2 text-sm font-medium ${mode ? "text-gray-900" : "dark:text-white"
+                      }`}
                   >
                     Phone Number
                   </label>
@@ -217,11 +205,10 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                     type="tel"
                     name="phone_number"
                     value={phone_number}
-                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 ${
-                      mode
+                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 ${mode
                         ? ""
                         : "!bg-[#19376D] caret-white placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
-                    }`}
+                      }`}
                     onChange={(e) => setPhone_Number(e.target.value)}
                     placeholder="+998 99 888 77 66"
                   />
@@ -229,9 +216,8 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                 <div>
                   <label
                     htmlFor="student_username"
-                    className={`block mb-2 text-sm font-medium ${
-                      mode ? "text-gray-900" : "dark:text-white"
-                    }`}
+                    className={`block mb-2 text-sm font-medium ${mode ? "text-gray-900" : "dark:text-white"
+                      }`}
                   >
                     {lang.studentsPage2["student_tusername"]}
                   </label>
@@ -239,11 +225,10 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                     type="text"
                     value={student_username}
                     name="student_username"
-                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-100 p-2.5 ${
-                      mode
+                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-100 p-2.5 ${mode
                         ? ""
                         : "!bg-[#19376D] caret-white placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
-                    }`}
+                      }`}
                     placeholder="@exmaple123"
                     onChange={(e) => setStudent_Username(e.target.value)}
                   />
@@ -251,9 +236,8 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                 <div>
                   <label
                     htmlFor="group"
-                    className={`block mb-2 text-sm font-medium ${
-                      mode ? "text-gray-900" : "dark:text-white"
-                    }`}
+                    className={`block mb-2 text-sm font-medium ${mode ? "text-gray-900" : "dark:text-white"
+                      }`}
                   >
                     {lang.studentsPage2["guruh_kiritish"]}
                   </label>
@@ -261,16 +245,15 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                     type="text"
                     value={group_input}
                     name="group_input"
-                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-100 p-2.5 ${
-                      mode
+                    className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-100 p-2.5 ${mode
                         ? ""
                         : "!bg-[#19376D] caret-white placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
-                    }`}
+                      }`}
                     onChange={(e) => setGroup_Input(e.target.value)}
                     placeholder="N-107"
                   />
                 </div>
-                <div>
+                {/* <div>
                   <label
                     htmlFor="course"
                     className={`block mb-2 text-sm font-medium ${
@@ -278,8 +261,8 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                     }`}
                   >
                     Course
-                  </label>
-                  <select
+                  </label> */}
+                {/* <select
                     id="course"
                     className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 ${
                       mode
@@ -292,15 +275,14 @@ export default function StudentPost({ setModal, modal, setStudents }) {
                         {group.direction}
                       </option>
                     ))}
-                  </select>
-                </div>
+                  </select> */}
+                {/* </div> */}
 
                 <div
-                  className="flex items-center justify-center w-full "
-                  style={{
+                  className="flex items-center justify-center w-full ">
+                  {/* style={{
                     marginLeft: "150px",
-                  }}
-                >
+                  }} */}
                   <label
                     htmlFor="dropzone-file"
                     style={{
