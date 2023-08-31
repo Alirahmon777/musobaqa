@@ -18,7 +18,7 @@ import {getNextId} from "../utils/helpers.js"
 
 export const groupsCRUD = (app) => {
   // GET all groups
-  app.get('/group', (req, res) => {
+  app.get('/groups', (req, res) => {
     try {
       const groups = readFile('groups.json');
       res.send(groups);
