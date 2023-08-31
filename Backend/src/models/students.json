@@ -1,16 +1,5 @@
 [
     {
-        "id": 2,
-        "ism": "Emily",
-        "familya": "Davidov",
-        "yosh": "20",
-        "tel_raqam": "+998936542178",
-        "t_username": "@alicesmith",
-        "rasm": "https://randomuser.me/api/portraits/women/2.jpg",
-        "jinsi": "female",
-        "guruh": "DS-101"
-    },
-    {
         "id": 3,
         "ism": "Bobjon",
         "familya": "Jackson",
@@ -44,27 +33,6 @@
         "guruh": "AI-202"
     },
     {
-        "id": 6,
-        "ism": "Temur",
-        "yosh": "100",
-        "familya": "tog'o",
-        "jinsi": "female",
-        "tel_raqam": "+998995430660 ",
-        "guruh": "N-107",
-        "t_username": "@exxmple123"
-    },
-    {
-        "id": 7,
-        "ism": "Temur",
-        "yosh": "124",
-        "familya": "Temur",
-        "jinsi": "female",
-        "tel_raqam": "+998 99 543 0660 ",
-        "guruh": "N-107",
-        "t_username": "@exxmple123",
-        "rasm": "C:\\fakepath\\pexels-peter-olexa-3875821.jpg"
-    },
-    {
         "id": 8,
         "ism": "Temur",
         "yosh": "124124",
@@ -74,5 +42,27 @@
         "guruh": "N-107",
         "t_username": "@exxmple123",
         "rasm": "C:\\fakepath\\Madagaskar_720.mp4"
+    },
+    {
+        "id": 9,
+        "ism": "Temur",
+        "yosh": "34",
+        "familya": "Temur",
+        "jinsi": "male",
+        "tel_raqam": "+998 99 543 0660 ",
+        "guruh": "N-107",
+        "t_username": "@exxmple123",
+        "rasm": "C:\\fakepath\\2.png"
+    },
+    {
+        "id": 10,
+        "ism": "Temur",
+        "yosh": "123",
+        "familya": "Temur",
+        "jinsi": "male",
+        "tel_raqam": "+998 99 543 0660 ",
+        "guruh": "N-107",
+        "t_username": "@exxmple123",
+        "rasm": "C:\\fakepath\\1.png"
     }
 ]
